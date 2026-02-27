@@ -1,0 +1,11 @@
+/* Corpo */
+body {
+    background-color: white;
+}
+/* Cabeçalho */
+header {
+    display: flex;
+    background-color: lightblue;
+    width: 100%;
+    height: 30%;
+}
