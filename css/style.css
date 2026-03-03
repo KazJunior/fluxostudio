@@ -1,11 +1,46 @@
+/* Google Fonts */
+
+/* Fontes utilizada */
+
+/* Reset CSS - Padronizar os navegadores */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: thin;
+    scrollbar-color: transparent;
+}
+
+
+
+
 /* Body */
 body {
     background-color: white;
+    font-size: 16px;
+    display: flex;
 }
 /* Header */
 header {
     display: flex;
     background-color: lightblue;
     width: 100%;
-    height: 30%;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Nav */
+
+.menu-desktop {
+    display: none;
+}
+
+
+
+/* Responsivo */
+
+@media (min-width:768px) {
+    .menu-desktop {
+        display: flex;
+    }
 }
