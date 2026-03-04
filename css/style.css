@@ -33,14 +33,31 @@ header {
 
 .menu-desktop {
     display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .menu = UL */
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 16px;
 }
 
 
 
 /* Responsivo */
-
+/* A partir de telas grandes */
 @media (min-width:768px) {
+
+    header {
+        padding: 1rem 6rem;
+    }
+
     .menu-desktop {
         display: flex;
+        justify-content: end;
+        align-items: center;
+        margin: auto;
     }
 }
