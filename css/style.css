@@ -1,6 +1,26 @@
-/* Google Fonts */
+ /* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 
-/* Fontes utilizada */
+/* Variáveis de Fonts */
+:root {
+    --fonte-menu: "Noto Sans", sans-serif;
+    --fonte-titulo: "Playfair", serif;
+    --fonte-sub: "Noto Serif", serif;
+}
+
+/* Variaveis Cores */
+:root {
+    --cor-destaque: color #f7f7fa;
+    --cor-padrao: color #fffcfc;
+}
+
+/* Fontes utilizadas */
+
+/* Conversão REM - PX */
+
+html {
+    font-size: 62.5%;
+}
 
 /* Reset CSS - Padronizar os navegadores */
 
@@ -12,13 +32,9 @@
     scrollbar-color: transparent;
 }
 
-
-
-
 /* Body */
 body {
     background-color: white;
-    font-size: 16px;
     display: flex;
 }
 /* Header */
@@ -44,6 +60,26 @@ header {
     gap: 16px;
 }
 
+/* HRef */
+
+.menu-link {
+    text-decoration: none;
+}
+
+.menu-texto {
+    color: var(--cor-padrao);
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-family: var(--fonte-menu);
+    font-weight: 500;
+}
+
+/* Herança */
+
+.menu-link.active .menu-texto,
+.menu-link:hover .menu-texto{
+    color: var(--cor-destaque);
+}
 
 
 /* Responsivo */
