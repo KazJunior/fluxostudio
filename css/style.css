@@ -81,6 +81,11 @@ header {
     color: var(--cor-destaque);
 }
 
+.logo img {
+    width: 5rem;
+    height: 5rem;
+}
+
 
 /* Responsivo */
 /* A partir de telas grandes */
