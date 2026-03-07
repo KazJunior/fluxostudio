@@ -11,7 +11,7 @@
 /* Variaveis Cores */
 :root {
     --cor-destaque:#8216e7;
-    --cor-padrao:#fffefe;
+    --cor-padrao:#070707;
 }
 
 /* Fontes utilizadas */
@@ -40,7 +40,7 @@ body {
 /* Header */
 header {
     display: flex;
-    background-color: lightblue;
+    background-color: #FFD700;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -84,6 +84,12 @@ header {
 .logo img {
     width: 5rem;
     height: 5rem;
+}
+
+.header-toggle {
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: var(--cor-padrao);
 }
 
 
