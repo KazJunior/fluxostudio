@@ -9,9 +9,35 @@
 }
 
 /* Variaveis Cores */
-:root {
-    --cor-destaque:#8216e7;
-    --cor-padrao:#070707;
+/* Tema Dark */
+:root, 
+:root[data-theme='dark'] {
+
+    --cor-fundo: #1c1f30;
+    --cor-fundo-secundaria: #312f52;
+    --cor-txt: #4b5251;
+    --hover: #95cfcf;
+
+    --icon-theme: #EFBF04;
+
+}   
+
+/* Tema Light */
+
+:root[data-theme='light'] {
+
+    --cor-fundo: #e9e3e3;
+    --cor-fundo-secundaria: #cac7c7;
+    --cor-txt: #8b8383;
+    --hover: #310404;
+
+    --icon-theme: #010029;
+
+}
+
+/* Filtro Cor do Logo */
+html[data-theme='dark'] .logo {
+    filter: invert(1);
 }
 
 /* Fontes utilizadas */
@@ -34,13 +60,13 @@ html {
 
 /* Body */
 body {
-    background-color: white;
+    background-color: var(--cor-fundo-secundaria);
     display: flex;
 }
 /* Header */
 header {
     display: flex;
-    background-color: #FFD700;
+    background-color: var(--cor-fundo);
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -67,7 +93,7 @@ header {
 }
 
 .menu-texto {
-    color: var(--cor-padrao);
+    color: var(--cor-txt);
     text-transform: capitalize;
     font-size: 2rem;
     font-family: var(--fonte-menu);
@@ -78,7 +104,7 @@ header {
 
 .menu-link.active .menu-texto,
 .menu-link:hover .menu-texto{
-    color: var(--cor-destaque);
+    color: var(--hover);
 }
 
 .logo img {
@@ -89,7 +115,7 @@ header {
 .header-toggle {
     cursor: pointer;
     font-size: 1.8rem;
-    color: var(--cor-padrao);
+    color: var(--icon-theme);
 }
 
 
