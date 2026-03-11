@@ -61,7 +61,6 @@ html {
 /* Body */
 body {
     background-color: var(--cor-fundo-secundaria);
-    display: flex;
 }
 /* Header */
 header {
