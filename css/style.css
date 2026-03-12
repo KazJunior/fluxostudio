@@ -16,6 +16,7 @@
     --cor-fundo: #1c1f30;
     --cor-fundo-secundaria: #312f52;
     --cor-txt: #4b5251;
+    --cor-titulo: #ebe3e3;
     --hover: #95cfcf;
 
     --icon-theme: #EFBF04;
@@ -29,6 +30,7 @@
     --cor-fundo: #e9e3e3;
     --cor-fundo-secundaria: #cac7c7;
     --cor-txt: #8b8383;
+    --cor-titulo: #1b1b1b; 
     --hover: #310404;
 
     --icon-theme: #010029;
@@ -117,6 +119,12 @@ header {
     color: var(--icon-theme);
 }
 
+/* Hero - home */
+
+h1 {
+    color: var(--cor-titulo);
+    font-size: 3rem;
+}
 
 /* Responsivo */
 /* A partir de telas grandes */
