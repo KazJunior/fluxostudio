@@ -18,7 +18,7 @@
     --cor-menu: #4b5251;
     --cor-titulo: #ebe3e3;
     --cor-txt: #d8d2d2;
-    --cor-icones: #183cb1;
+    --cor-icones: #1d3172;
     --hover-icon: #fff;
     --hover: #95cfcf;
 
@@ -157,12 +157,11 @@ p {
 
 .menu-social .social-icon {
     color: var(--cor-icones);
-    font-size: 2.2rem;
+    font-size: 3rem;
 }
 .menu-social .social-icon:hover {
     color: var(--hover-icon);
     transition: ease-in-out .5s;
-    transform: scale(2);
 }
 
 /* Responsivo */
