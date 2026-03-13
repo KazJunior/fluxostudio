@@ -15,8 +15,11 @@
 
     --cor-fundo: #1c1f30;
     --cor-fundo-secundaria: #312f52;
-    --cor-txt: #4b5251;
+    --cor-menu: #4b5251;
     --cor-titulo: #ebe3e3;
+    --cor-txt: #d8d2d2;
+    --cor-icones: #183cb1;
+    --hover-icon: #fff;
     --hover: #95cfcf;
 
     --icon-theme: #EFBF04;
@@ -29,9 +32,12 @@
 
     --cor-fundo: #e9e3e3;
     --cor-fundo-secundaria: #cac7c7;
-    --cor-txt: #8b8383;
+    --cor-menu: #8b8383;
     --cor-titulo: #1b1b1b; 
+     --cor-txt: #995219;
+    --cor-icones: #bbaeae;
     --hover: #310404;
+    --hover-icon: #fff;
 
     --icon-theme: #010029;
 
@@ -94,7 +100,7 @@ header {
 }
 
 .menu-texto {
-    color: var(--cor-txt);
+    color: var(--cor-menu);
     text-transform: capitalize;
     font-size: 2rem;
     font-family: var(--fonte-menu);
@@ -123,7 +129,40 @@ header {
 
 h1 {
     color: var(--cor-titulo);
-    font-size: 3rem;
+    font-size: 2.5rem;
+    font-family: var(--fonte-titulo);
+    font-weight: lighter;
+    letter-spacing: 0.1rem;
+}
+
+strong {
+    color: purple;
+    font-family: var(--fonte-titulo);
+    font-weight: bold;
+}
+
+p {
+    color: var(--cor-txt);
+    font-size: 1.8rem;
+    font-family: var(--fonte-menu);
+}
+/* Redes sociais */
+
+.menu-social {
+    display: flex;
+    list-style: none;
+    gap: 1.2rem;
+    padding: 0;
+}
+
+.menu-social .social-icon {
+    color: var(--cor-icones);
+    font-size: 2.2rem;
+}
+.menu-social .social-icon:hover {
+    color: var(--hover-icon);
+    transition: ease-in-out .5s;
+    transform: scale(2);
 }
 
 /* Responsivo */
