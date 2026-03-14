@@ -164,6 +164,25 @@ p {
     transition: ease-in-out .5s;
 }
 
+/* Carrossel */
+
+/* Estrutura dos 3 slides */
+/* Altura hero tela cheia */
+.carousel .carousel-item {
+    height: 40vh;
+    min-height: 600px;
+}
+
+/* Tamanho das imagens */
+
+.carousel .carousel-item img, 
+.carousel .carousel-item .ratio {
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+}
+
 /* Responsivo */
 /* A partir de telas grandes */
 @media (min-width:768px) {
