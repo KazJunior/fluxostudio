@@ -21,6 +21,7 @@
     --cor-icones: #1d3172;
     --hover-icon: #fff;
     --hover: #95cfcf;
+    --sombra: #5f2072;
 
     --icon-theme: #EFBF04;
 
@@ -38,6 +39,7 @@
     --cor-icones: #bbaeae;
     --hover: #310404;
     --hover-icon: #fff;
+    --sombra: #5f2072;
 
     --icon-theme: #010029;
 
@@ -214,6 +216,37 @@ p {
 .carousel p {
     text-shadow: 0 2px 14px rgb(153, 0, 255);
     color: white;
+}
+
+/* Vídeo */
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video iframe {
+    aspect-ratio: 16/9;
+    width: 70vw;
+    box-shadow: 0 10px 15px -2px var(--sombra);
+}
+
+.complemento {
+    display: flex;
+    background: var(--cor-fundo);
+    padding: 6rem 1rem 2rem;
+    margin-top: -5rem;
+    justify-content: center;
+}
+
+.complemento h2 {
+    font-size: 2rem;
+    color: white;
+    text-transform: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-family: var(--fonte-sub);
 }
 
 /* Responsivo */
