@@ -183,6 +183,39 @@ p {
     pointer-events: none;
 }
 
+/* Filtro ou Overlay escuro sutil acima dos slides */
+/* Pseudo elemento */
+
+.carousel .carousel-item::before {
+    content: "";
+    background: #0000007a;
+    position: absolute;
+    inset: 0;
+
+}
+
+.carousel .carousel-caption {
+    position: absolute;
+    inset: 250px;
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+    align-items: center;
+}   
+
+.carousel h5 {
+    font-size: 5rem;
+}
+.carousel p {
+    font-size: 2.2rem;
+}
+
+.carousel h5,
+.carousel p {
+    text-shadow: 0 2px 14px rgb(153, 0, 255);
+    color: white;
+}
+
 /* Responsivo */
 /* A partir de telas grandes */
 @media (min-width:768px) {
