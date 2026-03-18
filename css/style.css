@@ -19,6 +19,7 @@
     --cor-titulo: #ebe3e3;
     --cor-txt: #d8d2d2;
     --cor-icones: #1d3172;
+    --cor-borda: #746f6f;
     --hover-icon: #fff;
     --hover: #95cfcf;
     --sombra: #5f2072;
@@ -35,8 +36,9 @@
     --cor-fundo-secundaria: #cac7c7;
     --cor-menu: #8b8383;
     --cor-titulo: #1b1b1b; 
-     --cor-txt: #995219;
+    --cor-txt: #995219;
     --cor-icones: #bbaeae;
+    --cor-borda: #353333;
     --hover: #310404;
     --hover-icon: #fff;
     --sombra: #5f2072;
@@ -79,6 +81,10 @@ header {
     width: 100%;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    z-index: 200;
+    padding: 0.5rem 1rem;
+    border-bottom: solid 1px var(--cor-borda);
 }
 /* Nav */
 
@@ -242,25 +248,92 @@ p {
 
 .complemento h2 {
     font-size: 2rem;
-    color: white;
+    color: var(--cor-titulo);
     text-transform: none;
     letter-spacing: 2px;
     font-weight: bold;
     font-family: var(--fonte-sub);
 }
 
+/* Seção Geral */
+
+#home {
+    padding: 4rem 2rem;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+}
+
 /* Responsivo */
+/* Largura até  */
+@media (max-width: 768px) {
+    .carousel .carousel-inner {
+        margin-top: -2rem;
+    }
+    #home {
+        padding-top: 6rem;
+    }
+}
+
 /* A partir de telas grandes */
 @media (min-width:768px) {
 
     header {
-        padding: 1rem 6rem;
+        padding: 1rem 10rem;
+        justify-content: flex-start;
+        gap: 2rem;
     }
 
     .menu-desktop {
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
         align-items: center;
-        margin: auto;
+    }
+    .logo {
+        margin-right: auto;
+    }
+
+    .carousel .carousel-inner {
+        margin-top: -4.2rem;
+        padding-top: 7rem;
+    }
+
+    /* Voltar Aqui */
+    #home {
+        padding: 4rem 10rem;
+    }
+
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;        
+    }
+    
+    .main-content h1 {
+        font-size: 5rem;
+    }
+}
+
+/* Telas maiores que 1400px */
+
+@media (min-width: 1400px) {
+    .main-content h1 {
+        font-size: 6.5rem;
+    }
+
+    /* Voltar aqui */
+
+    .complemento {
+        padding: 5rem 7rem 4rem;
+        margin-top: -7rem;
+    }
+
+    .complemento h2 {
+        font-size: 4.5rem;
     }
 }
