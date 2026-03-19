@@ -257,7 +257,8 @@ p {
 
 /* Seção Geral */
 
-#home {
+#home, 
+.projetos {
     padding: 4rem 2rem;
 }
 
@@ -268,6 +269,26 @@ p {
     margin-top: 2rem;
     margin-bottom: 5rem;
 }
+
+/* Projetos */
+
+.projetos {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* Voltar */
+  
+}
+
+.projetos h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: var(--fonte-subtitulo);
+  color: var(--cor-titulo);
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 
 /* Responsivo */
 /* Largura até  */
@@ -304,7 +325,8 @@ p {
     }
 
     /* Voltar Aqui */
-    #home {
+    #home,
+    .projetos {
         padding: 4rem 10rem;
     }
 
@@ -319,11 +341,22 @@ p {
     }
 }
 
+/* Telas maiores que 1200px */
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 5rem;
+    }
+    .projetos h2{
+        font-size: 4rem;
+    }
+}
+
 /* Telas maiores que 1400px */
 
 @media (min-width: 1400px) {
     .main-content h1 {
-        font-size: 6.5rem;
+        font-size: 8.5rem;
     }
 
     /* Voltar aqui */
@@ -335,5 +368,19 @@ p {
 
     .complemento h2 {
         font-size: 4.5rem;
+    }
+
+    /* Voltar aqui */
+
+    .projetos {
+        padding: 10rem 7rem 4rem;
+    }
+
+    .complemento h2 {
+        font-size: 4.5rem;
+    }
+
+    .projetos h2 {
+        font-size: 6rem;
     }
 }
