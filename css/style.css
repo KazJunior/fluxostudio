@@ -13,15 +13,15 @@
 :root, 
 :root[data-theme='dark'] {
 
-    --cor-fundo: #1c1f30;
-    --cor-fundo-secundaria: #312f52;
-    --cor-menu: #4b5251;
+    --cor-fundo: #1e1320;
+    --cor-fundo-secundaria: #141318;
+    --cor-menu: #5b247e;
     --cor-titulo: #ebe3e3;
     --cor-txt: #d8d2d2;
-    --cor-icones: #1d3172;
+    --cor-icones: #2d114d;
     --cor-borda: #746f6f;
     --hover-icon: #fff;
-    --hover: #95cfcf;
+    --hover: #fc6601;
     --sombra: #5f2072;
 
     --icon-theme: #EFBF04;
@@ -144,7 +144,7 @@ h1 {
 }
 
 strong {
-    color: purple;
+    color: var(--hover);
     font-family: var(--fonte-titulo);
     font-weight: bold;
 }
