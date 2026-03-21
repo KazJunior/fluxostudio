@@ -142,7 +142,7 @@ h1 {
     font-size: 2.5rem;
     font-family: var(--fonte-titulo);
     font-weight: lighter;
-    letter-spacing: 0.1rem;
+    letter-spacing: -0.2rem
 }
 
 strong {
