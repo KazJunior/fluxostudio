@@ -16,11 +16,12 @@
     --cor-fundo: #1e1320;
     --cor-fundo-secundaria: #141318;
     --cor-menu: #5b247e;
-    --cor-titulo: #ebe3e3;
-    --cor-txt: #d8d2d2;
-    --cor-icones: #2d114d;
+    --cor-titulo: #eae3eb;
+    --cor-txt: #d5bbe4;
+    --cor-icones: #7c08e2;
     --cor-borda: #746f6f;
-    --hover-icon: #fff;
+    --cor-destaque: #fc6601;
+    --hover-icon: #fc6601;
     --hover: #fc6601;
     --sombra: #5f2072;
 
@@ -32,16 +33,17 @@
 
 :root[data-theme='light'] {
 
-    --cor-fundo: #e9e3e3;
-    --cor-fundo-secundaria: #cac7c7;
-    --cor-menu: #8b8383;
-    --cor-titulo: #1b1b1b; 
-    --cor-txt: #995219;
-    --cor-icones: #bbaeae;
-    --cor-borda: #353333;
-    --hover: #310404;
-    --hover-icon: #fff;
-    --sombra: #5f2072;
+    --cor-fundo: #fcfaff;
+    --cor-fundo-secundaria: #f0ebf5;
+    --cor-menu: #7a36a1;
+    --cor-titulo: rgb(27, 15, 37); 
+    --cor-txt: #1e1ca7;
+    --cor-icones: #4a0675;
+    --cor-borda: #d1cedb;
+    --cor-destaque: #e65c00;
+    --hover: #fc6601;
+    --hover-icon: #ff751a;
+    --sombra: #5b247e;
 
     --icon-theme: #010029;
 
@@ -144,7 +146,7 @@ h1 {
 }
 
 strong {
-    color: var(--hover);
+    color: var(--cor-destaque);
     font-family: var(--fonte-titulo);
     font-weight: bold;
 }
@@ -287,6 +289,7 @@ p {
   color: var(--cor-titulo);
   font-weight: 400;
   text-transform: uppercase;
+  font-weight: bold;
 }
 
 .projeto-container {
@@ -297,6 +300,7 @@ p {
 .projeto-card {
     display: flex;
     flex-direction: column;
+    gap: 4rem;
 }
 
 .card-cover {
@@ -304,6 +308,55 @@ p {
     object-fit: cover;
     border-radius: 5rem 5rem;
 }
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 2rem;
+    text-align: justify;
+}
+
+.card-body .card-title {
+    color: var(--cor-titulo);
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: var(--fonte-sub);
+}
+
+.card-body .card-description {
+    color: var(--cor-txt);
+    font-family: var(--fonte-menu);
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.card-lista {
+    list-style: none;
+    padding-left: 0;
+}
+
+.card-item {
+    color: var(--cor-txt);
+    font-size: 1.8rem;
+    font-family: var(--fonte-menu);
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.card-item i {
+    color: var(--cor-icones);
+    font-size: 2.2rem;
+    margin-right: 1rem;
+}
+
+.card-item i:hover {
+    color: var(--hover-icon);
+    transition: ease-in-out .3s;
+}
+
 
 /* Responsivo */
 /* Largura até  */
@@ -354,9 +407,19 @@ p {
     .main-content h1 {
         font-size: 5rem;
     }
+
+    .card-body {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 }
 
 @media (min-width: 992px) {
+    
+    .projeto-card {
+        flex-direction: row;
+    }
+
     .card-cover {
         width: 55%;
     }
