@@ -260,7 +260,8 @@ p {
 /* Seção Geral */
 
 #home, 
-.projetos {
+.projetos,
+.contato {
     padding: 4rem 2rem;
 }
 
@@ -285,7 +286,7 @@ p {
 .projetos h2 {
   text-align: center;
   font-size: 2.5rem;
-  font-family: var(--fonte-subtitulo);
+  font-family: var(--fonte-sub);
   color: var(--cor-titulo);
   font-weight: 400;
   text-transform: uppercase;
@@ -358,6 +359,60 @@ p {
 }
 
 
+/* Contato */
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.8rem;
+    border-top: 1px solid var(--hover);
+    border-bottom: 1px solid var(--hover);
+}
+
+.contato h2 {
+    color: var(--cor-destaque);
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: var(--fonte-sub);
+}
+
+.contato .menu-social li{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-right: 5px;
+}
+
+.contato span {
+    color: var(--cor-txt);
+    font-size: 1.8rem;
+    margin-left: 5px;
+    font-family: var(--fonte-menu);
+}
+
+/* Grid CSS */
+
+.contato-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 2rem;
+    width: 100%;
+    margin-top: 5rem;
+}
+.contato-formulario,
+.contato-mapa {
+    width: 100%;
+}
+
+.contato-mapa iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 0.5rem;
+}
+
 /* Responsivo */
 /* Largura até  */
 @media (max-width: 768px) {
@@ -394,7 +449,8 @@ p {
 
     /* Voltar Aqui */
     #home,
-    .projetos {
+    .projetos,
+    .contato {
         padding: 4rem 10rem;
     }
 
@@ -411,6 +467,10 @@ p {
     .card-body {
         justify-content: flex-start;
         align-items: flex-start;
+    }
+    .projetos h2,
+    .contato h2{
+        font-size: 3.5rem;
     }
 }
 
@@ -435,8 +495,9 @@ p {
     h1 {
         font-size: 5rem;
     }
-    .projetos h2{
-        font-size: 4rem;
+    .projetos h2,
+    .contato h2{
+        font-size: 4.5rem;
     }
 }
 
@@ -468,7 +529,8 @@ p {
         font-size: 4.5rem;
     }
 
-    .projetos h2 {
+    .projetos h2,
+    .contato h2 {
         font-size: 6rem;
     }
 }
