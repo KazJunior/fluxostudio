@@ -125,6 +125,52 @@ header {
     color: var(--hover);
 }
 
+.btn-menu-mobile {
+    background: transparent;
+    color: var(--cor-destaque);
+    border: none;
+    font-size: 2.2rem;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+/* Menu mobile - Estilo e animação */
+
+.menu-mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background: var(--cor-fundo-secundaria);
+    z-index: 100;
+    transform: translateX(100%);
+    display: flex;
+    flex-direction: column;
+    padding-top: 6.5rem;
+    border-left: 1px solid var(--cor-destaque);
+    height: 100vh;
+    width: 35%;
+    transition: ease-in-out 0.3s;
+}
+
+.menu-mobile.active {
+    transform: translateX(0%);
+}
+
+.menu-mobile .menu-lista {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    list-style: none;
+    padding: 1rem 0;
+}
+
+.menu-mobile li:hover {
+    background-color: var(--cor-formulario);
+    width: 100%;
+    padding: 0;
+}
+
+
 .logo img {
     width: 5rem;
     height: 5rem;
@@ -531,6 +577,9 @@ p {
     .projetos h2,
     .contato h2{
         font-size: 3.5rem;
+    }
+    .btn-menu-mobile {
+        display: none;
     }
 }
 
