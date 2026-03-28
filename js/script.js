@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded' , () => {
     const menuMobile = document.getElementById('menuMobile');
 
     const icon = menuHamburger?.querySelector('i');
+    const menuLinks = document.querySelectorAll('.menu-link');
 
 
     //Função mudar a cor do tema (dark / light)
@@ -45,4 +46,12 @@ document.addEventListener('DOMContentLoaded' , () => {
     if (menuHamburger) {
         menuHamburger.addEventListener('click', toggleMenu);    
     }
+
+    // Destaque Menu
+    menuLinks.forEach(item => {
+        item.addEventListener('click' , () => {
+            menuLinks.forEach(i => i.classList.remove('active'));
+            item.classList.add('active');
+        });
+    });
 });
